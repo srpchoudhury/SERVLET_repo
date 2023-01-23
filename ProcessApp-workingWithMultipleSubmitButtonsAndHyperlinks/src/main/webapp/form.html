@@ -1,0 +1,35 @@
+<h1 style="color:red;text-align:center">Working eith multiple submit buttons and hyperlinks</h1>
+
+<form action="processurl" method="post"  bgcolor="pink">
+      <table align="center" bgcolor="cyan">
+      
+            <tr>
+             <td>value1 ::</td>
+                    <td><input type="text" name="t1"></td>
+            </tr>
+              <tr>
+             <td>value2 ::</td>
+                     <td><input type="text" name="t2"></td>
+            </tr>
+              <tr>
+                    <td>
+                         <input type="submit" value="add" name="s1">
+			</td>
+                   <td>
+                          <input type="submit" value="sub" name="s1">&nbsp;&nbsp;
+                          <a href="processurl?s1=link1">Sys Property</a>
+                   </td>
+            </tr>
+
+         <tr>
+             <td>
+                  <input type="submit" value="mul" name="s1">
+               </td>
+             <td>
+                  <input type="submit" value="div" name="s1">&nbsp;&nbsp;
+                  <a href="processurl?s1=link2">Sys date and time</a>
+               </td>
+            </tr>
+            
+         </table>
+</form>
