@@ -1,12 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
-  <display-name>MIMEApp</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-  </welcome-file-list>
+<web-app>
+    <!-- Servlet configuration -->
+  <servlet>
+     <servlet-name>html</servlet-name>
+     <servlet-class>com.nt.servlet.HtmlServlet</servlet-class>
+  </servlet>
+<!-- Servlet mapping -->
+  <servlet-mapping>
+      <servlet-name>html</servlet-name>
+	  <url-pattern>/htmlurl</url-pattern>
+  </servlet-mapping>
+
+    <!-- Servlet configuration -->
+  <servlet>
+     <servlet-name>exel</servlet-name>
+     <servlet-class>com.nt.servlet.ExelServlet</servlet-class>
+  </servlet>
+<!-- Servlet mapping -->
+  <servlet-mapping>
+      <servlet-name>exel</servlet-name>
+	  <url-pattern>/exelurl</url-pattern>
+  </servlet-mapping>
+
+<!-- Servlet configuration -->
+  <servlet>
+     <servlet-name>word</servlet-name>
+     <servlet-class>com.nt.servlet.WordServlet</servlet-class>
+  </servlet>
+<!-- Servlet mapping -->
+  <servlet-mapping>
+      <servlet-name>word</servlet-name>
+	  <url-pattern>/wordurl</url-pattern>
+  </servlet-mapping>
+
+<!-- Servlet configuration -->
+  <servlet>
+     <servlet-name>xml</servlet-name>
+     <servlet-class>com.nt.servlet.XmlServlet</servlet-class>
+  </servlet>
+<!-- Servlet mapping -->
+  <servlet-mapping>
+      <servlet-name>xml</servlet-name>
+	  <url-pattern>/xmlurl</url-pattern>
+  </servlet-mapping>
+
+<!-- Servlet configuration -->
+  <servlet>
+     <servlet-name>plain</servlet-name>
+     <servlet-class>com.nt.servlet.PlainServlet</servlet-class>
+  </servlet>
+<!-- Servlet mapping -->
+  <servlet-mapping>
+      <servlet-name>plain</servlet-name>
+	  <url-pattern>/plainurl</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Servlet configuration -->
+  <servlet>
+     <servlet-name>lc</servlet-name>
+     <servlet-class>com.nt.servlet.LcTestServlet</servlet-class>
+  </servlet>
+<!-- Servlet mapping -->
+  <servlet-mapping>
+      <servlet-name>lc</servlet-name>
+	  <url-pattern>/lcurl</url-pattern>
+  </servlet-mapping>
 </web-app>
