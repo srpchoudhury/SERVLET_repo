@@ -1,0 +1,134 @@
+<!-- AllComps_form.html -->
+<h1 style="color:red;text-align:center">Working with diff types of form comps</h1>
+
+<form action="formurl" method="get">
+   <table bgcolor="cyan"  align="center">
+           <tr>
+                <td>Person Name  :: </td>
+                <td><input type="text" name="pname"></td>
+           </tr>
+           
+             <tr>
+                <td>Person Age  :: </td>
+                <td><input type="password" name="page"></td>
+           </tr>
+           
+             <tr>
+                <td>Person Addrs  :: </td>
+                <td><textarea rows="10" cols="10" name="paddrs"></textarea></td>
+           </tr>
+           
+             <tr>
+                <td> Gender  :: </td>
+                <td>
+                     <input type="radio" name="gender" value="M">Male &nbsp;&nbsp;
+                     <input type="radio" name="gender" value="F" checked>Female &nbsp;&nbsp;
+                </td>
+           </tr>
+           
+            <tr>
+                <td> Marital Status :: </td>
+                <td>
+                     <input type="checkbox" name="ms" value="married">Married &nbsp;&nbsp;
+                </td>
+           </tr>
+           
+            <tr>
+                <td>Qualification  :: </td>
+                <td>
+                     <select name="qlfy">
+                             <option value="" selected>---select---</option>
+                            <option value="Engineer">B.E/B.tech</option>
+                            <option value="Medico">MBBS/MD</option>
+                            <option value="Accountant">B.com/M.com</option>
+                            <option value="arts">B.A/M.A</option>
+                     </select>
+                </td>
+           </tr>
+           
+            <tr>
+                <td>Languages Known  :: </td>
+                <td>
+                     <select name="languages" multiple> 
+                            <option value="telugu" selected>Telugu</option>
+                            <option value="english">English</option>
+                            <option value="hindi">Hindi</option>
+                            <option value="oriya">Oriya</option>
+                     </select>
+                </td>
+           </tr>
+           
+            <tr>
+                <td>Hobies  </td>
+                <td>
+                     <input type="checkbox" name="hb" value="reading" checked>Reading &nbsp;&nbsp;
+                     <input type="checkbox" name="hb" value="watching">WatchingTV&nbsp;&nbsp;
+                     <input type="checkbox" name="hb" value="Playing">Playing Cricket &nbsp;&nbsp;
+                     <input type="checkbox" name="hb" value="roming">Traveling &nbsp;&nbsp;
+                </td>
+           </tr>
+           
+           <tr>
+                <td>DOB</td>
+               <td><input type="date" name="dob"></td>
+           </tr>
+
+          <tr>
+                <td>Time of Birth</td>
+               <td><input type="time" name="tob"></td>
+           </tr>
+           
+           <tr>
+                <td>Month of Birth</td>
+               <td><input type="month" name="mob"></td>
+           </tr>
+           
+           <tr>
+                <td>Week no of Birth in DOB year</td>
+               <td><input type="week" name="wdb"></td>
+           </tr>
+           
+           <tr>
+                <td>select fav number</td>
+               <td><input type="range"  min="0" max="9" name="favNumber"></td>
+           </tr>
+           
+           <tr>
+                <td>Phone number</td>
+               <td><input type="tel" name="mobileNo"></td>
+           </tr>
+           
+           <tr>
+                <td>email id</td>
+               <td><input type="email" name="mail"></td>
+           </tr>
+           
+           <tr>
+                <td>Fav color</td>
+               <td><input type="color" name="favColor"></td>
+           </tr>
+           
+           <tr>
+                <td>Person income</td>
+               <td><input type="number"  min="10000" max="1000000" name="income"></td>
+           </tr>
+           
+           <tr>
+                <td>FB url</td>
+               <td><input type="url" name="fburl"></td>
+           </tr>
+           
+           <tr>
+                <td>Fav Google Search String</td>
+               <td><input type="search" name="favSearch"></td>
+           </tr>
+           
+           <tr>
+                <td><input type="submit" value="process Details"></td>
+               <td><input type="reset" value="cancel"></td>
+           </tr>
+           
+           
+   </table>
+
+</form>
