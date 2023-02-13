@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>DBPoolApp</display-name>
+  
+  <servlet>
+        <servlet-name>cust</servlet-name>
+        <servlet-class>com.nt.servlet.CustomerRegistrationServlet</servlet-class>
+  </servlet>
+  <init-param>
+          <param-name>jndi</param-name>
+          <param-value>java:/comp/env/Dsjndi</param-value>
+  </init-param>
+  <servlet-mapping>
+         <servlet-name>cust</servlet-name>
+         <url-pattern>/custurl</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>Customer_register.html</welcome-file>
+    
+  </welcome-file-list>
+</web-app>
