@@ -8,13 +8,18 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class EmployeeSearchServlet extends HttpServlet {
-	 private static final String GET_EMP_BY_NO="SELECT EMPNO,ENAME,JOB,SAL,DEPTNO FROM EMP WHERE EMPNO=?";
+	 /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private static final String GET_EMP_BY_NO="SELECT EMPNO,ENAME,JOB,SAL,DEPTNO FROM EMP WHERE EMPNO=?";
 	 @Override
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		 System.out.println("EmployeeSearchServlet.doGet()");
@@ -22,6 +27,9 @@ public class EmployeeSearchServlet extends HttpServlet {
 		 PrintWriter pw=res.getWriter();
 		 //set response content type
 		 res.setContentType("text/html");
+		 //include header content
+		 RequestDispatcher rd1=req.getRequestDispatcher("/headurl");
+		 rd1.include(req, res);
 		 //read form data
 		 int no=Integer.parseInt(req.getParameter("eno"));
 		 try {
@@ -51,16 +59,24 @@ public class EmployeeSearchServlet extends HttpServlet {
 				    }//if
 				    pw.println("<br><br><p style='text-align:center'><a href='search.html'>home</a>");
 				 
-				    //close stream
-				    pw.close();
+				 
+				   
 			 }//try2
 			 
-		 }//try1
+	
+		 
+		 //include footer content
+		 RequestDispatcher rd2=req.getRequestDispatcher("/footer.html");
+		 rd2.include(req, res);
+		   //close stream
+		 pw.close();
+	 }//try
 		 catch(SQLException se) {
 			 se.printStackTrace();
 		 }
+}
 		
-	}//doGet(-,-)
+
 	 
 	 @Override
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {

@@ -1,4 +1,4 @@
-package Controller;
+package controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 
 import com.sun.org.apache.xpath.internal.operations.And;
 
-import Dao.Dao;
+import dao.Dao;
 
 
 /**

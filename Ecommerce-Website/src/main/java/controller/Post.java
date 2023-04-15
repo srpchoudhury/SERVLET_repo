@@ -1,4 +1,4 @@
-package Controller;
+package controller;
 
 
 import java.io.File;
@@ -35,7 +35,7 @@ import org.apache.catalina.ssi.ResponseIncludeWrapper;
 
 //import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
 
-import Dao.Dao;
+import dao.Dao;
 
 /**
  * Servlet implementation class Post
